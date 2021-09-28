@@ -2,6 +2,8 @@
 
 namespace App\Http\Middleware;
 
+//Add this file to middleware folder
+
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
