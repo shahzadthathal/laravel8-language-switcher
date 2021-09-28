@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+//Add this file to controller folder
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
