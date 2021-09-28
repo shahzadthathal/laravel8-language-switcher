@@ -6,3 +6,9 @@
 @endforeach
 
 						
+
+
+<!--Other links-->
+
+<li><a href="{{url(app()->getLocale())}}">Home</a></li>
+<li><a href="{{url(app()->getLocale(), 'what-is-other')}}">What is other</a></li>
