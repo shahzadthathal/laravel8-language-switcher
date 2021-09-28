@@ -5,6 +5,8 @@ Route::get('/', function () {
 });
 
 Route::get('change/lang', [App\Http\Controllers\LocalizationController::class, 'lang_change'])->name('LangChange');
+//Blog will be without language code in url
+//Route::get('blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
 
 
 Route::group([
@@ -18,7 +20,7 @@ Route::group([
     });
 
   //It will serve both en/cn language pages
-    Route::get('what-is-vpn', function () {
+    Route::get('what-is-other', function () {
         return view(app()->getLocale().'/pages/what-is-other');
     });
     
