@@ -14,15 +14,13 @@ Route::group([
     ], function() {
 
     Route::get('/', function () {
-        return view('en.welcome');
+        return view(app()->getLocale().'.welcome');
     });
 
+  //It will serve both en/cn language pages
     Route::get('what-is-vpn', function () {
-        return view('en/pages/what-is-other');
+        return view(app()->getLocale().'/pages/what-is-other');
     });
     
-    Route::get('what-is-vpn', function () {
-        return view('cn/pages/what-is-other');
-    });
-
+   
 });
