@@ -10,5 +10,6 @@
 
 <!--Other links-->
 
-<li><a href="{{url(app()->getLocale())}}">Home</a></li>
-<li><a href="{{url(app()->getLocale(), 'what-is-other')}}">What is other</a></li>
+<li class="nav-item"> <a class="nav-link" href="{{url(app()->getLocale())}}"> @lang("home")</a> </li>
+<li class="nav-item"> <a class="nav-link" href="{{url(app()->getLocale(), 'what-is-vpn')}}">@lang("what-is-other")</a> </li>
+						
